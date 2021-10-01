@@ -1,0 +1,15 @@
+.container_apresentacao{
+  display: flex;
+  justify-content: space-between;
+  background: var(--bgSite);
+  padding: 2.5rem 0;
+
+  .container_apresentacao_text{
+    padding: 0 5rem;
+  }
+
+  img {
+    width: 20rem;
+    padding: 0 10rem;
+  }
+}
