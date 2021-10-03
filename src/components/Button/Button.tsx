@@ -1,9 +1,13 @@
 import './style.scss';
 
-export const Button = () => {
+interface ButtonProps {
+  texto: string
+}
+
+export const Button = ({texto}: ButtonProps) => {
   return (
     <button className="btn_primary">
-      Botão
+      {texto}
     </button>
   )
 }

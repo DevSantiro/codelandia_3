@@ -1,5 +1,7 @@
 import image from "../assets/image/image.svg";
 import { Button } from "../Button/Button";
+import { Card } from "../Card";
+import { Footer } from "../Footer";
 import './style.scss';
 
 export const Apresentacao = () => {
@@ -14,37 +16,23 @@ export const Apresentacao = () => {
             beatae non aut quasi neque? Amet facilis voluptatem commodi nisi
             explicabo fugit veritatis minima.
           </p>
-          <Button />
+          <Button texto="Botão" />
         </div>
         <img src={image} alt="" />
       </section>
 
       <section>
-        <main>
-          <div>
-            <div></div>
-            <div>
-              <h1>Titulo do Card</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Ducimus consequuntur distinctio deleniti totam sapiente, iste
-                quod dolorum magni voluptates eveniet.
-              </p>
-            </div>
-          </div>
+        <main className="card_container">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </main>
       </section>
 
-      <footer>
-        <h1>Entre em contato</h1>
-        <form action="">
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <textarea name="" id=""></textarea>
-          <button>Enviar Mensagem</button>
-        </form>
-      </footer>
+      <Footer />
     </>
   );
 };
